@@ -13,9 +13,7 @@ function Home({ homePage, latests }) {
 
   return (
     <div className="flex md:flex-row flex-col my-20 overflow-hidden ">
-      <Head>
-       
-      </Head>
+      <Head></Head>
       <div className=" w-full md:w-1/2 pl-0 ">
         <img
           src={homeImage.asset.url}
@@ -95,5 +93,6 @@ export const getStaticProps = async () => {
       homePage: responses[0],
       latests: responses[1],
     },
+    revalidate: 10,
   };
 };
