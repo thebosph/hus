@@ -2,7 +2,7 @@ import React from "react";
 
 const footer = () => {
   return (
-    <footer className="shadow-inner  w-screen max-w-6xl bg-white  flex justify-between p-5 bottom-0  fixed ">
+    <footer className="shadow-inner  w-screen max-w-6xl bg-white  flex justify-between p-5 bottom-0  md:fixed ">
       <div>
         <span>copyright 2021 huseyin icen, building by ivo  </span>
       </div>
