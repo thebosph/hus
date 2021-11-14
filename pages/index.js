@@ -14,7 +14,7 @@ function Home({ homePage, latests }) {
   return (
     <div className="flex md:flex-row flex-col my-20 overflow-hidden ">
       <Head>
-        <title>Huseyin Icen | Istanbul Univercity</title>
+       
       </Head>
       <div className=" w-full md:w-1/2 pl-0 ">
         <img
