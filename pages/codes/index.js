@@ -3,7 +3,6 @@ import Link from "next/link";
 
 import sanityClient from "../../client";
 
-
 export default function Home({ allCodes }) {
   return (
     <div className="my-20">
@@ -61,5 +60,6 @@ export async function getStaticProps() {
     props: {
       allCodes,
     },
+    revalidate: 100,
   };
 }

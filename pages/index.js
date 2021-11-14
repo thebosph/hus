@@ -1,7 +1,7 @@
 import sanityClient from "../client";
 
 import React from "react";
-
+import Head from "next/head";
 import groq from "groq";
 import BlockContent from "@sanity/block-content-to-react";
 import News from "../components/news";
@@ -13,6 +13,9 @@ function Home({ homePage, latests }) {
 
   return (
     <div className="flex md:flex-row flex-col my-20 overflow-hidden ">
+      <Head>
+        <title>Huseyin Icen | Istanbul Univercity</title>
+      </Head>
       <div className=" w-full md:w-1/2 pl-0 ">
         <img
           src={homeImage.asset.url}
