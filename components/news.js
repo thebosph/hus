@@ -4,7 +4,7 @@ import Link from "next/link";
 
 function News({ latest }) {
   return (
-    <div className="p-4 flex space-x-4  shadow-xl rounded-lg">
+    <div className="p-4 flex space-x-4 my-5 shadow-xl rounded-lg">
       <img
         src={latest.mainImage.asset.url}
         alt=""
