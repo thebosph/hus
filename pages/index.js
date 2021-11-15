@@ -5,11 +5,9 @@ import Head from "next/head";
 import groq from "groq";
 import BlockContent from "@sanity/block-content-to-react";
 import News from "../components/news";
-import { useState } from "react";
 
 function Home({ homePage, latests }) {
   const { author, body, homeImage, title } = homePage;
-  const [show, setShow] = useState(true);
 
   return (
     <div className="flex md:flex-row flex-col my-20 overflow-hidden ">
@@ -24,17 +22,9 @@ function Home({ homePage, latests }) {
             {title}
           </h1>
           <BlockContent
-            className={`text-gray-500 p-3 font-montserrat  ${
-              show ? "line-clamp-6" : ""
-            } h-auto`}
+            className="text-gray-500 p-3 font-montserrat  h-auto"
             blocks={body}
           />
-          <button
-            onClick={() => setShow(!show)}
-            className="rounded-lg px-2  border self-end text-blue-500 hover:bg-blue-500 hover:text-white transition-all duration-500"
-          >
-            read to continue
-          </button>
         </div>
       </div>
 

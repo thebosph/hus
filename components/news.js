@@ -9,8 +9,8 @@ function News({ latest }) {
         src={latest.mainImage.asset.url}
         alt=""
         className="flex-none w-18 h-18 rounded-lg object-cover bg-gray-100"
-        width="144"
-        height="144"
+        width="80"
+        height="80"
       />
       <div className="min-w-0 relative flex-auto">
         <h2 className="font-montserrat font-bold text-gray-500">
