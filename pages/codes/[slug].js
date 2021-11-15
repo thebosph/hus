@@ -21,6 +21,10 @@ const Code = ({ code }) => {
   const turnBack = () => {
     router.push("/codes");
   };
+
+  if (router.isFallback) {
+    return <div>Loading...</div>;
+  }
   return (
     <div className="max-w-6xl my-20 max-h-full bg-white px-10 ">
       <div className="flex justify-between flex-row my-4">
