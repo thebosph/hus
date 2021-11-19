@@ -14,6 +14,8 @@ function Home({ homePage, latests }) {
       <Head></Head>
       <div className=" w-full md:w-1/2 pl-0 ">
         <img
+          width={400}
+          height={400}
           src={homeImage.asset.url}
           className=" object-cover w-full h-1/6 shadow-2xl rounded-xl hover:shadow-2xl hover:scale-110 transition-all duration-300"
         />
